@@ -40,7 +40,7 @@ if __name__ == '__main__':
     for trial in run_info:
         fn = trial[0]
         if fn not in clips:
-            clips[fn]  = visual.MovieStim3(
+            clips[fn]  = visual.MovieStim(
                 win, fn, size=(1472, 1080), name=fn, noAudio=True, loop=True)
 
     fixation = visual.TextStim(win, text='+', height=80, pos=(0, 0), color='#FFFFFF')
